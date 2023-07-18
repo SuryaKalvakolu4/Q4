@@ -26,14 +26,14 @@
     </style>
 </head>
 <body>
-    <h1>SerialN 47</h1>
+    <h1>Filter Control Valve of Rapid Filter 1</h1>
     <div id="question"></div>
     <div id="options"></div>
-    <button onclick="nextQuestion()">SUBMIT</button>
+    <button onclick="nextQuestion()">Submit</button>
     <script>
         // Function to clear the quiz score from local storage
 function clearQuizScore() {
-    localStorage.removeItem("SerialN_47_Score");
+    localStorage.removeItem("Filter_Control_Valve_1");
 }
 
 // Function to clear local storage when the tab is closed or refreshed
@@ -56,7 +56,7 @@ function startTimer() {
         ];
 
         let currentQuestion = 0;
-        let SerialN_47_Score = 0;
+        let Filter_Control_Valve_1 = 0;
 
         // Function to display current question
         function displayQuestion() {
@@ -100,9 +100,9 @@ function startTimer() {
     }
 
     if (!isAnswered || selectedOption !== quiz[currentQuestion].answer) {
-        SerialN_47_Score = 0; // Assign zero score if question is not attempted or answered incorrectly
+        Filter_Control_Valve_1 = 0; // Assign zero score if question is not attempted or answered incorrectly
     } else {
-        SerialN_47_Score++; // Increment score for correct answer
+        Filter_Control_Valve_1++; // Increment score for correct answer
     }
 }
 
@@ -113,8 +113,8 @@ function startTimer() {
 
             if (currentQuestion === quiz.length) {
                 // All questions answered, store score in local storage
-                localStorage.setItem("SerialN_47_Score", SerialN_47_Score);
-                alert("Quiz completed. Your score is " + SerialN_47_Score);
+                localStorage.setItem("Filter_Control_Valve_1", Filter_Control_Valve_1);
+                alert("Quiz completed. Your score is " + Filter_Control_Valve_1);
             } else {
                 displayQuestion();
             }
